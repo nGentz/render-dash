@@ -1,8 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import plotly.express as px
-import geopandas as gpd
-from shapely.geometry import Point, Polygon
 import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
@@ -43,7 +39,6 @@ by_station_df['ridership_bin'] = pd.cut(by_station_df['ridership_per_day'], bins
 by_station_df = by_station_df.sort_values(by=['ridership_per_day'], ascending=False).reset_index(drop=True)
 
 app = dash.Dash(__name__)
-server = app.server
 
 app.layout = html.Div([
     html.H4("Interactive Ridership by Station Map", style={'padding-left': '5%'}),  # Add left padding to the H4 title
