@@ -4,7 +4,7 @@ from dash import dcc, html, Input, Output
 import plotly.express as px
 
 # read csv
-df = pd.read_csv('/Users/nickgentz/Downloads/dash_app/by_station_df.csv')
+df = pd.read_csv('by_station_df.csv')
 
 # Specify your Mapbox access token (replace 'YOUR_MAPBOX_TOKEN' with your actual token)
 mapbox_token = 'pk.eyJ1Ijoibmlja2dlbnR6IiwiYSI6ImNsMnE4MXBqYTFodWozamt6Y3UzaDN2bm8ifQ.sudv6WDuPydt3LtqMLJZlw'
